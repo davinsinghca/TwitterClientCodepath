@@ -8,6 +8,11 @@ class Tweet {
     var body: String = ""
     var createdAt: String = ""
     var user: User? = null
+    var date: String = ""
+
+    fun getFormattedTimestamp(): String {
+        return TimeFormatter.getTimeDifference(date)
+    }
 
     companion object {
         fun fromJson(jsonObject: JSONObject): Tweet {
@@ -15,6 +20,7 @@ class Tweet {
             tweet.body = jsonObject.getString("text")
             tweet.createdAt = jsonObject.getString("created_at")
             tweet.user = User.fromJson(jsonObject.getJSONObject("user"))
+            tweet.date = jsonObject.getString("created_at")
             return tweet
         }
 
