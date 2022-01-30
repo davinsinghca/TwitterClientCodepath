@@ -9,6 +9,9 @@
         android:id="@+id/ivProfileImage"
         android:layout_width="65dp"
         android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,6 +21,8 @@
         android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
@@ -28,10 +33,12 @@
         android:id="@+id/tvTweetBody"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:ellipsize="end"
         android:maxLines="5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername"
-        tools:text="This is a really really long tweet to text to our layout! I am writing a long tweet." />
+        tools:text="This is a really really long tweetThis is a really really long tweet tThis is a really really longeally really long tweet tThis is a really realleally really long tweet tThis is a really realleally really long tweet tThis is a really reall tweet tThis is a really really long tweet tThis is a really really long tweet t to text to our layout! I am writing a long tweet." />
 </androidx.constraintlayout.widget.ConstraintLayout>
